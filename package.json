@@ -1,0 +1,22 @@
+{
+  "name": "stdlib.ronnoc",
+  "version": "1.1.1",
+  "description": "Ronnoc Standard Library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "watch": "nodemon --watch 'src/**/*.ts' --exec tsc",
+    "build": "rm -r ./dist && tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
